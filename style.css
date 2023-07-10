@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container{
+    display: grid;
+    width: 1920px;
+    height: 965px;
+    grid-template-columns: 400px;
+    grid-template-rows: 110px 1fr 60px;
+    grid-template-areas: 
+    "header main-content"
+    "sidebar main-content"
+    "footer footer" ;
+}
+
+.header{
+    display: grid;
+    grid-area: header;
+    width: auto;
+    height: auto;
+
+}
+
+.header header{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 80px;
+    font-family: Roboto;
+    font-size: 60px;
+    font-weight: 200;
+    color: white;
+    background-color: #172554;
+}
+
+
+
+.sidebar{
+    display: grid;
+    grid-area: sidebar;
+    width: auto;
+    height: auto;
+    color: black;
+    background-color: white;
+}
+
+.sidebar .book{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: larger;
+    font-weight: bold;
+}
+.sidebar .infos form > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+.sidebar .infos form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    font-weight: 500;
+}
+
+.sidebar .infos input[type=text]{
+    border-radius: 4px;
+    padding-top: 10px;
+    width: 280px;
+    height: 30px;
+    border: none;
+    background-color: #d1d5db;
+
+}
+
+.sidebar .infos form #addbook{
+    width: 120px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #172554;
+    border: none;
+    color: white;
+}
+
+.main-content{
+    display: grid;
+    grid-area: main-content;
+    width: auto;
+    height: auto;
+    background-color: #d1d5db;
+}
+
+#books-list {
+    position: absolute;
+    top: 40px;
+    margin-left: 80px;
+    width: 70%;
+    border-collapse: collapse;
+  }
+
+  
+  #book-requirements{
+    position: relative;
+    left: 20px;
+    background-color: #172554;
+    color: white;
+  }
+
+  #book-requirements td{
+    padding: 40px;
+  }
+  .book-info {
+    font-size: 20px;
+    position: relative;
+    left: 60px;
+    top: 10px;
+  }
+  .book-info i {
+    padding: 5px;
+    font-size: 20px;
+  }
+  .book-info i:hover{
+    cursor: pointer;
+  }
+
+  .fa-trash-alt {
+    color: red;
+    transition: 0.3s;
+  }
+.footer{
+    display: grid;
+    grid-area: footer;
+    width: auto;
+    height: auto;
+    color: white;
+    background-color: #172554;
+}
+
+.footer footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

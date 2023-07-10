@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <header>
+                LIBRARY
+            </header>
+        </div>
+        <div class="sidebar">
+            <aside>
+                <div class="add">
+                    <div class="book">
+                        ADD A BOOK
+                    </div>
+                    <div class="infos">
+                        <form>
+                            <div>Title <br> <input type="text" name="title" id="title" class="title"></div>
+                            <div>Author <br> <input type="text" name="author" id="author" class="author"></div>
+                            <div>Pages <br> <input type="text" name="pages" id="pages" class="pages"></div>
+                            <input type="button" value="ADD A NEW BOOK" id="addbook">
+                        </form>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <div class="main-content">
+            <main>
+                <table id="books-list">
+                    <thead id="book-requirements">
+                        <tr>
+                            <td>Title</td>
+                            <td>Author</td>
+                            <td>Pages</td>
+                            <td>Actions</td>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+
+                    </tbody>
+                </table>
+            </main>
+        </div>
+        <div class="footer">
+            <footer>Created By @ayush_anilan</footer>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/0aae6b6553.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
