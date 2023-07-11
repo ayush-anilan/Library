@@ -63,12 +63,12 @@ function validateForm(event) {
   if (titleInput.value === "") {
     titleErr.style.display = "block";
   } else {
-    titleErr.style.display = "none";
+    titleErr.style.display = "block";
   }
   if (authorInput.value === "") {
     authorErr.style.display = "block";
   } else {
-    authorErr.style.display = "none";
+    authorErr.style.display = "block";
   }
   if (
     pageInput.value === "" ||
@@ -77,7 +77,7 @@ function validateForm(event) {
   ) {
     pageErr.style.display = "block";
   } else {
-    pageErr.style.display = "none";
+    pageErr.style.display = "block";
   }
   if (
     titleInput.value !== "" &&
